@@ -1,0 +1,221 @@
+/* Land Battle Specific Styles */
+.land-battle .card-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.land-battle .row.g-3 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.land-battle .row.g-3:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.land-battle input[type="number"]::placeholder {
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.input-group {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.input-group button {
+    width: 40px;
+    border-color: #dee2e6;
+    transition: all 0.2s ease;
+}
+
+.input-group button:hover {
+    background-color: #f8f9fa;
+}
+
+.input-group button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.country-list img {
+    height: 40px;
+    width: 60px;
+    margin: 2px;
+}
+
+.unitIcon {
+    position: relative;
+}
+
+.unitIcon img{
+    height: 60px;
+}
+
+.miniIcon img {
+    position: absolute;
+    left: 40px;
+    top: 15px;
+    height: 30px;
+    width: 30px;
+}
+
+.input-group input {
+    border-left: 0;
+    border-right: 0;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.table thead th {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.table td, .table th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.input-group-sm {
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+.bg-light {
+    background-color: rgba(0, 100, 0, 0.05) !important;
+}
+
+
+.small-input {
+    width: 150px; /* Set the desired width for the input box */
+    padding: 5px; /* Optional: Add some padding */
+}
+
+/*  Power Preview Bar */
+.bar-container {
+    position: relative;
+    height: 30px;
+    background-color: #e0e0e0; /* Background for the bar */
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+}
+.bar {
+    height: 100%;
+    position: absolute;
+    transition: width 0.5s;
+}
+.label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+.label-left {
+    left: 10px;
+}
+.label-right {
+    right: 10px;
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+/* Responsive css */
+
+@media only screen and (max-width: 768px){
+    .input-group {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-group input {
+        width: 30px !important;
+    }
+    .input-group button {
+        30px;
+    }
+
+    .country-list img {
+        height: 20px;
+        width: 30px;
+        margin: 3px;
+    }
+
+    .unitIcon img {
+      height: 30px;
+    }
+
+    .miniIcon img {
+      position: absolute;
+      top: 20px;
+      left: 10px;
+      height: 16px;
+      width: 16px;
+    }
+    
+    .port-adv {
+        display: flex;
+    }
+    
+    .dice {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /*
+    table {
+        font-size: 12px;
+    }
+    */
+    .all-elim {
+        width: 50%;
+    }
+    
+
+}
